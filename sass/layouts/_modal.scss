@@ -164,17 +164,21 @@
 
 .user-agreement-txt {
     display: inline-flex;
-    line-height: 1.71;
-    justify-content: center;
     align-items: center;
-    gap: 7px;
     user-select: none;
     margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width:1200px){
+        font-size: inherit;
+        line-height: 1.71;
+    }
 }
 
 .checkbox-custom {
     width: 16px;
     height: 15px;
+    margin-right: 8px;
 
     background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
 }

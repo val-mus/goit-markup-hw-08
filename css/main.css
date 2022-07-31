@@ -644,24 +644,28 @@ address {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  line-height: 1.71;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 7px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .user-agreement-txt {
+    font-size: inherit;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-custom {
   width: 16px;
   height: 15px;
+  margin-right: 8px;
   background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
 }
 
