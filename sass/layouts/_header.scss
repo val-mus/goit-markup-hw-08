@@ -1,8 +1,24 @@
 .header {
     border-bottom: #ECECEC 1px solid;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+    }
 }
 
+.header__navigation{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
 .header__logo {
+    display: block;
     margin-right: 93px;
 }
 
@@ -12,12 +28,15 @@
     color: var(--prime-bg-color);
     }
 }
+.header__contacts{
 
+}
 .header__contact-item{
     &:hover, &:focus {
     color: var(--focus-color);
     }
 }
+
 .header__contact-icon {
     fill: currentColor;
     margin-right: 10px;
@@ -25,9 +44,14 @@
 .header__nav-links,
 .header__contacts {
     gap: 50px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 .header__contacts {
     margin-left: auto;
+
+
 }
 .header__navigation-link {
     display: block;

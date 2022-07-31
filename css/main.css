@@ -124,7 +124,6 @@ address {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
-  padding: 32px 0;
   -webkit-transition: color 250ms var(--transaction-time);
   transition: color 250ms var(--transaction-time);
 }
@@ -269,9 +268,30 @@ address {
 
 .header {
   border-bottom: #ECECEC 1px solid;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__logo {
+  display: block;
   margin-right: 93px;
 }
 
@@ -294,6 +314,12 @@ address {
 .header__nav-links,
 .header__contacts {
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .header__nav-links,
+.header__contacts {
+    display: none;
+  }
 }
 
 .header__contacts {
@@ -651,7 +677,7 @@ address {
   text-transform: uppercase;
   color: var(--secondary-txt-color);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .why-list__title {
     text-align: center;
   }
