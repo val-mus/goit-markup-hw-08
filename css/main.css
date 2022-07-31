@@ -924,27 +924,25 @@ address {
   background-color: var(--footer-bg-color);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__line-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-right: 70px;
   }
 }
@@ -961,6 +959,7 @@ address {
 @media screen and (min-width: 1200px) {
   .address-links {
     margin-bottom: 0px;
+    text-align: left;
   }
 }
 
@@ -990,6 +989,7 @@ address {
 @media screen and (min-width: 1200px) {
   .footer__soc-block {
     margin-bottom: 0px;
+    margin-right: auto;
   }
 }
 
@@ -1012,7 +1012,7 @@ address {
   color: var(--focus-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer__tablet-thumb {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1028,9 +1028,24 @@ address {
 .footer__connect-block {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__connect-block {
+    margin-right: 0;
+    text-align: left;
+    width: 570px;
+    margin-left: auto;
+  }
+}
 
 .footer__email-input-form {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer__email-input-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .footer__email-input {
@@ -1038,7 +1053,6 @@ address {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-right: 12px;
   width: 450px;
   height: 50px;
   font-size: 16px;
@@ -1050,13 +1064,31 @@ address {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__email-input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 16px;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
 
 .footer__btn {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   gap: 10px;
   fill: var(--prime-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .cards {
