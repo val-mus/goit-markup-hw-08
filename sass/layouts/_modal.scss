@@ -4,8 +4,8 @@
     left: 0;
     z-index: 50;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
@@ -31,8 +31,8 @@
     top: 50%;
     left: 50%;
     padding: 40px;
-    width: 450px;
-    height: 609px;
+    min-width: 450px;
+    min-height: 609px;
 
     @media screen and (min-width:1200px) {
         width: 528px;

@@ -505,8 +505,8 @@ address {
   top: 0;
   left: 0;
   z-index: 50;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms var(--transaction-time);
@@ -530,8 +530,8 @@ address {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  min-width: 450px;
+  min-height: 609px;
   background: var(--prime-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
