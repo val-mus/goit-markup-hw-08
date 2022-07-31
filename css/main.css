@@ -1235,6 +1235,12 @@ address {
       flex-wrap: wrap;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .border {
   padding-top: 20px;
   padding-right: 24px;
@@ -1260,7 +1266,7 @@ address {
 
 .card-block {
   display: block;
-  width: 370px;
+  width: 450px;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--transaction-time);
   transition: -webkit-box-shadow 250ms var(--transaction-time);
@@ -1271,7 +1277,7 @@ address {
 .card-thumb {
   position: relative;
   overflow: hidden;
-  width: 370px;
+  width: 450px;
 }
 
 .card-overlay {

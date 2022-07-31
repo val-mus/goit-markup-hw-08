@@ -21,27 +21,60 @@
 
   <body>
     <header class="header">
-      <div class="container flex-centered">
-        <nav class="header__navigation flex-centered">
-          <a href="./index.html" class="logo header__logo link">
-            Web<span class="logo__scnd-txt">Studio</span></a
-          >
-          <ul class="list header__nav-links flex-centered">
-            <li>
-              <a href="./index.html" class="header__navigation-link link">Студия</a>
+      <div class="container header__container">
+        <a href="./index.html" class="logo header__logo link">
+          Web<span class="logo__scnd-txt">Studio</span></a
+        >
+        <button class="mobile-menu__btn" type="button" data-menu-button>
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use class="mobile-menu__open" href="./images/icons/icons.svg#mobile-menu"></use>
+            <use class="mobile-menu__close" href="./images/icons/icons.svg#mobile-menu-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <ul class="list mobile-menu__nav">
+            <li class="mobile-menu__nav-item"><a href="./index.html"></a>Студия</li>
+            <li class="mobile-menu__nav-item mobile-menu__current-link">
+              <a href="./portfolio.html"></a>Портфолио
             </li>
+            <li class="mobile-menu__nav-item"><a href="#mobile-menu__contacts"></a>Контакты</li>
+          </ul>
+          <ul class="list mobile-menu__contacts" id="mobile-menu__contacts">
+            <li class="mobile-menu__contact-item accent"><a href=""></a>+38 096 111 11 11</li>
+            <li class="mobile-menu__contact-item">
+              <a href="mailto:info@devstudio.com"></a>info@devstudio.com
+            </li>
+          </ul>
+          <ul class="list mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-item-link link" href=""></a>Instagram
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-item-link link" href=""></a>Twitter
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-item-link link" href=""></a>Facebook
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-item-link link" href=""></a>Linkedin
+            </li>
+          </ul>
+        </div>
+        <nav class="header__navigation">
+          <ul class="list header__nav-links">
             <li>
               <a
-                href="./portfolio.html"
+                href="./index.html"
                 class="header__navigation-link link header__navigation-link--current"
-                >Портфолио</a
+                >Студия</a
               >
             </li>
-            <li><a href="#" class="header__navigation-link link">Контакты</a></li>
+            <li><a href="./portfolio.html" class="header__navigation-link link">Портфолио</a></li>
+            <li><a href="#adress" class="header__navigation-link link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list header__contacts flex-centered">
-          <li class="header__contact-item flex-centered">
+        <ul class="list header__contacts">
+          <li class="header__contact-item">
             <a href="mailto:info@devstudio.com" class="contact link">
               <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons/icons.svg#icon-mail"></use>
@@ -49,7 +82,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__contact-item flex-centered">
+          <li class="header__contact-item">
             <a href="tel:+380961111111" class="contact link">
               <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons/icons.svg#icon-phone"></use>
@@ -64,21 +97,25 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="list buttons flex-centered">
+          <ul class="list buttons">
             <li><button type="button" class="secondary-btn">Все</button></li>
             <li><button type="button" class="secondary-btn">Веб-сайты</button></li>
             <li><button type="button" class="secondary-btn">Приложения</button></li>
             <li><button type="button" class="secondary-btn">Дизайн</button></li>
             <li><button type="button" class="secondary-btn">Маркетинг</button></li>
           </ul>
-          <ul class="list cards flex-centered">
+          <ul class="list cards">
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(1).jpg    1x,
+                      ./images/portfolio-img/img(1)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(1).jpg"
                     alt="Изображение пример Веб-сайт"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -99,9 +136,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(2).jpg    1x,
+                      ./images/portfolio-img/img(2)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(2).jpg"
                     alt="Изображение пример Дизайн"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -124,9 +165,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(3).jpg    1x,
+                      ./images/portfolio-img/img(3)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(3).jpg"
                     alt="Изображение пример Приложение"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -147,9 +192,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(4).jpg    1x,
+                      ./images/portfolio-img/img(4)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(4).jpg"
                     alt="Изображение пример Маркетинг"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -170,9 +219,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(5).jpg    1x,
+                      ./images/portfolio-img/img(5)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(5).jpg"
                     alt="Изображение пример Приложение"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -193,9 +246,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(6).jpg    1x,
+                      ./images/portfolio-img/img(6)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(6).jpg"
                     alt="Изображение пример Веб-сайт"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -216,9 +273,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(7).jpg    1x,
+                      ./images/portfolio-img/img(7)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(7).jpg"
                     alt="Изображение пример Дизайн"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -239,9 +300,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(8).jpg    1x,
+                      ./images/portfolio-img/img(8)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(8).jpg"
                     alt="Изображение пример Маркетинг"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -262,9 +327,13 @@
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
                   <img
+                    srcset="
+                      ./images/portfolio-img/img(9).jpg    1x,
+                      ./images/portfolio-img/img(9)@2x.jpg 2x
+                    "
                     src="./images/portfolio-img/img(9).jpg"
                     alt="Изображение пример Приложение"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="card-overlay">
@@ -287,81 +356,83 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__line-item">
-          <a href="./index.html" class="logo footer__logo link"
-            >Web<span class="logo__scnd-txt logo__scnd-txt--invers-color">Studio</span></a
-          >
-          <address>
-            <ul class="list address-links">
-              <li class="address-links">
+        <div class="footer__tablet-thumb">
+          <div class="footer__line-item">
+            <a href="./index.html" class="logo footer__logo link"
+              >Web<span class="logo__scnd-txt logo__scnd-txt--invers-color">Studio</span></a
+            >
+            <address id="adress">
+              <ul class="list address-links">
+                <li class="address-links__item">
+                  <a
+                    class="address-links__address link"
+                    href="https://goo.gl/maps/YjMtobuVedqzEs7B6"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address-links__item">
+                  <a class="footer__contact link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-links__item">
+                  <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__soc-block">
+            <strong class="footer__connect-txt">Присоиденяйтесь</strong>
+            <ul class="list-social-connection list flex-centered">
+              <li class="list-social-connection__item">
                 <a
-                  class="address-links__address link"
-                  href="https://goo.gl/maps/YjMtobuVedqzEs7B6"
-                  target="_blank"
+                  href=""
+                  class="list-social-connection__link list-social-connection__link--inverse-bgc"
                   rel="noreferrer noopener"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  aria-label="Company instagram"
                 >
+                  <svg class="list-social-connection__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-links">
-                <a class="footer__contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="list-social-connection__item">
+                <a
+                  href=""
+                  class="list-social-connection__link list-social-connection__link--inverse-bgc"
+                  rel="noreferrer noopener"
+                  aria-label="Company twitter"
+                  ><svg class="list-social-connection__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-links">
-                <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="list-social-connection__item">
+                <a
+                  href=""
+                  class="list-social-connection__link list-social-connection__link--inverse-bgc"
+                  rel="noreferrer noopener"
+                  aria-label="Company facebook"
+                  ><svg class="list-social-connection__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-social-connection__item">
+                <a
+                  href=""
+                  class="list-social-connection__link list-social-connection__link--inverse-bgc"
+                  rel="noreferrer noopener"
+                  aria-label="Company linkedin"
+                  ><svg class="list-social-connection__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__soc-block">
-          <strong class="footer__connect-txt">Присоиденяйтесь</strong>
-          <ul class="list-social-connection list flex-centered">
-            <li class="list-social-connection__item">
-              <a
-                href=""
-                class="list-social-connection__link list-social-connection__link--inverse-bgc"
-                rel="noreferrer noopener"
-                aria-label="Company instagram"
-              >
-                <svg class="list-social-connection__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-social-connection__item">
-              <a
-                href=""
-                class="list-social-connection__link list-social-connection__link--inverse-bgc"
-                rel="noreferrer noopener"
-                aria-label="Company twitter"
-                ><svg class="list-social-connection__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-social-connection__item">
-              <a
-                href=""
-                class="list-social-connection__link list-social-connection__link--inverse-bgc"
-                rel="noreferrer noopener"
-                aria-label="Company facebook"
-                ><svg class="list-social-connection__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-social-connection__item">
-              <a
-                href=""
-                class="list-social-connection__link list-social-connection__link--inverse-bgc"
-                rel="noreferrer noopener"
-                aria-label="Company linkedin"
-                ><svg class="list-social-connection__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__connect-block">
           <strong class="footer__connect-txt">Подпишитесь на рассылку</strong>
@@ -383,5 +454,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
