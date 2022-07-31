@@ -1,0 +1,32 @@
+.why-list {
+    gap: 30px;
+}
+
+.why-list__item {
+    width: calc((100% - 90px)/4);
+
+}
+
+.why-list__meta {
+    display: inline-flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--third-bg-color);
+    border-radius: 4px;
+}
+
+.why-list__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--secondary-txt-color);
+}
+
+.why-list__description {
+    line-height: 1.71;
+}

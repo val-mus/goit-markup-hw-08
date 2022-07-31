@@ -1,0 +1,12 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--padding-top-reset {
+        padding-top: 0px;
+    }
+    
+    &--bgc-change {
+        background-color: var(--third-bg-color);
+    }
+}

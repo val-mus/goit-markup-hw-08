@@ -1,0 +1,83 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background-color: var(--focus-color);
+    color: var(--prime-bg-color);
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    cursor: pointer;
+    
+    transition: background-color 250ms var(--transaction-time),
+    box-shadow 250ms var(--transaction-time);
+
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--btn-hv-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;}
+    
+
+
+   
+   
+   
+    /* sign-up btn */
+  
+    gap: 10px;
+   
+    margin-right: 0px;
+
+    fill: var(--prime-bg-color);
+
+    
+   
+
+    /* prime btn */
+
+/* secondary btn */
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: inherit;
+
+    color: var(--secondary-txt-color);
+    background: var(--third-bg-color);
+    border-radius: 4px;
+    border: none;
+
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--transaction-time),
+    color 250ms var(--transaction-time),
+    box-shadow 250ms var(--transaction-time);
+
+}
+   .secondary-btn:hover,
+   .secondary-btn:focus {
+       color: var(--prime-bg-color);
+       background-color: var(--focus-color);
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   }

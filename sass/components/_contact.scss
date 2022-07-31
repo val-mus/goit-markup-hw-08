@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: inherit;
+    padding: 32px 0;
+
+    transition: color 250ms var(--transaction-time);
+    &:hover,
+    &:focus {
+    color: var(--focus-color);
+    }
+}
+
