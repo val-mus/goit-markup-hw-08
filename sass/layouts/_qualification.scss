@@ -1,19 +1,41 @@
 .why-list {
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+ 
+
 }
 
 .why-list__item {
-    width: calc((100% - 90px)/4);
+  
+    display: block;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px)/2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/4);
+    }
+    
 
 }
 
+
 .why-list__meta {
-    display: inline-flex;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
+   
+    width: 450px;
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+         @media screen and (min-width: 1200px) {
+             width: 270px;
+        }
+    
+
+    height: 120px;
+    margin-bottom: 30px;
 
     background: var(--third-bg-color);
     border-radius: 4px;
@@ -25,7 +47,12 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--secondary-txt-color);
-}
+    
+    @media screen and (max-width:479px) {
+        text-align: center;
+        } 
+    }
+   
 
 .why-list__description {
     line-height: 1.71;
