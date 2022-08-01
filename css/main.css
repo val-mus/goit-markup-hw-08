@@ -231,17 +231,49 @@ address {
 }
 
 .buttons {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-
 .buttons > li:not(:last-child) {
   margin-right: 8px;
 }
+@media screen and (max-width: 767px) {
+  .buttons > li:nth-child(-n+2) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+  }
+}
 
 .secondary-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -267,7 +299,7 @@ address {
 }
 
 .mobile-menu__btn {
-  z-index: 100;
+  z-index: 1000;
   background-color: transparent;
   border: none;
   display: -webkit-box;
@@ -299,7 +331,7 @@ address {
 }
 
 .mobile-menu {
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -320,6 +352,7 @@ address {
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
   transition: transform 500ms, -webkit-transform 500ms;
+  pointer-events: all;
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
@@ -1231,14 +1264,16 @@ address {
 }
 
 .cards {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: -15px;
+  }
 }
 
 .border {
@@ -1251,22 +1286,29 @@ address {
 }
 
 .complete-card {
-  margin-right: 30px;
-  margin-bottom: 30px;
   background-color: var(--prime-bg-color);
 }
-
-.complete-card:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .complete-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
-.complete-card:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .complete-card {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .complete-card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .card-block {
   display: block;
-  width: 450px;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--transaction-time);
   transition: -webkit-box-shadow 250ms var(--transaction-time);
@@ -1277,7 +1319,6 @@ address {
 .card-thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
 }
 
 .card-overlay {
