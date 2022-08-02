@@ -1,6 +1,5 @@
 .hero {
-    min-width: 480px;
-    max-width: 1600px;
+    width: 100%;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -57,7 +56,7 @@
 
 .hero-title {
     margin-bottom: 30px;
-    width: 360px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
 
@@ -69,6 +68,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--prime-bg-color);
+
+    @media screen and (min-width: 480px){
+        width: 360px;
+        
+    }
 
     @media screen and (min-width: 1200px) {
         width: 696px;

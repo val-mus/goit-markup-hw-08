@@ -78,7 +78,7 @@ address {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -96,9 +96,14 @@ address {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -594,8 +599,7 @@ address {
 }
 
 .hero {
-  min-width: 480px;
-  max-width: 1600px;
+  width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -642,7 +646,7 @@ address {
 
 .hero-title {
   margin-bottom: 30px;
-  width: 360px;
+  width: 300px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
@@ -652,6 +656,11 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--prime-bg-color);
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
@@ -903,7 +912,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background: var(--third-bg-color);
@@ -1090,7 +1098,7 @@ address {
 }
 
 .footer {
-  min-width: 480px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
@@ -1225,7 +1233,7 @@ address {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
