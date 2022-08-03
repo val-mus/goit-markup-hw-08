@@ -1,5 +1,5 @@
 .footer {
-    min-width: 480px;
+    width:100%;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-bg-color);
@@ -131,7 +131,7 @@
     // margin-right: 12px;
 
 
-    width: 450px;
+    width: calc(100% - 20px);
     height: 50px;
 
     font-size: 16px;
@@ -142,6 +142,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width: 480px){
+        width: 450px;
+        
+    }
 
     @media screen and (min-width: 1200px){
         display: inline-flex;
