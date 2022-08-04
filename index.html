@@ -35,10 +35,12 @@
         <div class="mobile-menu" data-menu>
           <ul class="list mobile-menu__nav">
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link mobile-menu__current-link" href="./index.html">Студия</a>
+              <a class="mobile-menu__nav-link link mobile-menu__current-link" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link " href="./portfolio.html">Портфолио</a>
+              <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="mobile-menu__nav-item">
               <a class="mobile-menu__nav-link link" href="#mobile-menu__contacts">Контакты</a>
@@ -49,7 +51,9 @@
               <a class="link mobile-menu__contact-link accent" href="">+38 096 111 11 11</a>
             </li>
             <li class="mobile-menu__contact-item">
-              <a class="link mobile-menu__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link mobile-menu__contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
           <ul class="list mobile-menu__socials">
@@ -176,7 +180,7 @@
                     required
                   />
                   <span class="checkbox-custom"></span>
-                   <span>Соглашаюсь с рассылкой и принимаю</span>
+                  <span>Соглашаюсь с рассылкой и принимаю</span>
                   <a class="agreement-cond" href="./index.html">Условия договора</a>
                 </label>
                 <button type="submit" class="btn">Отправить</button>
@@ -284,15 +288,20 @@
           <h2 class="sections-title">Наша команда</h2>
           <ul class="employees-list list">
             <li class="employees-list__item">
-              <img
-                srcset="
-                  ./images/teammates-photo/ihor.jpg    1x,
-                  ./images/teammates-photo/ihor@2x.jpg 2x
-                "
-                src="./images/teammates-photo/ihor.jpg"
-                alt="Фото учасника команды. Игорь Демьяненко"
-                width="450"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-1_lg.webp 1x, ./images/teammates-photo/team-ph-1_lg@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-1_lg.jpeg 1x, ./images/teammates-photo/team-ph-1_lg@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-1_md.webp 1x, ./images/teammates-photo/team-ph-1_md@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-1_md.jpeg 1x, ./images/teammates-photo/team-ph-1_md@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-1_sm.webp 1x, ./images/teammates-photo/team-ph-1_sm@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-1_sm.jpeg 1x, ./images/teammates-photo/team-ph-1_sm@2x.jpeg 2x" type="image/jpeg" />
+                <img
+                  src="./images/teammates-photo/team-ph-1_sm.jpg"
+                  alt="Фото учасника команды. Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="employees-list__meta">
                 <h3 class="employees-list__title">Игорь Демьяненко</h3>
                 <p class="employees-list__position" lang="en">Product Designer</p>
@@ -349,15 +358,19 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                srcset="
-                  ./images/teammates-photo/olha.jpg    1x,
-                  ./images/teammates-photo/olha@2x.jpg 2x
-                "
-                src="./images/teammates-photo/olha.jpg"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-2_lg.webp 1x, ./images/teammates-photo/team-ph-2_lg@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-2_lg.jpeg 1x, ./images/teammates-photo/team-ph-2_lg@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-2_md.webp 1x, ./images/teammates-photo/team-ph-2_md@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-2_md.jpeg 1x, ./images/teammates-photo/team-ph-2_md@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-2_sm.webp 1x, ./images/teammates-photo/team-ph-2_sm@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-2_sm.jpeg 1x, ./images/teammates-photo/team-ph-2_sm@2x.jpeg 2x" type="image/jpeg" />
+                <img
+                src="./images/teammates-photo/team-ph-2_sm.jpg"
                 alt="Фото учасника команды. Ольга Репина"
-                width="450"
+                width="450" height="460"
               />
+              </picture>       
               <div class="employees-list__meta">
                 <h3 class="employees-list__title">Ольга Репина</h3>
                 <p class="employees-list__position" lang="en">Frontend Developer</p>
@@ -414,15 +427,21 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                srcset="
-                  ./images/teammates-photo/nikolay.jpg    1x,
-                  ./images/teammates-photo/nikolay@2x.jpg 2x
-                "
-                src="./images/teammates-photo/nikolay.jpg"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-3_lg.webp 1x, ./images/teammates-photo/team-ph-3_lg@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-3_lg.jpeg 1x, ./images/teammates-photo/team-ph-3_lg@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-3_md.webp 1x, ./images/teammates-photo/team-ph-3_md@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-3_md.jpeg 1x, ./images/teammates-photo/team-ph-3_md@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-3_sm.webp 1x, ./images/teammates-photo/team-ph-3_sm@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-3_sm.jpeg 1x, ./images/teammates-photo/team-ph-3_sm@2x.jpeg 2x" type="image/jpeg" />
+                         <img
+                src="./images/teammates-photo/team-ph-3_sm.jpg"
                 alt="Фото учасника команды.Николай Тарасов."
-                width="450"
+                width="450" height="460"
               />
+              
+              </picture>       
+     
 
               <div class="employees-list__meta">
                 <h3 class="employees-list__title">Николай Тарасов</h3>
@@ -480,12 +499,15 @@
               </div>
             </li>
             <li class="employees-list__item">
-              <img
-                srcset="
-                  ./images/teammates-photo/mykhayl.jpg    1x,
-                  ./images/teammates-photo/mykhayl@2x.jpg 2x
-                "
-                src="./images/teammates-photo/mykhayl.jpg"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-4_lg.webp 1x, ./images/teammates-photo/team-ph-4_lg@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)" srcset="./images/teammates-photo/team-ph-4_lg.jpeg 1x, ./images/teammates-photo/team-ph-4_lg@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-4_md.webp 1x, ./images/teammates-photo/team-ph-4_md@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/teammates-photo/team-ph-4_md.jpeg 1x, ./images/teammates-photo/team-ph-4_md@2x.jpeg 2x" type="image/jpeg" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-4_sm.webp 1x, ./images/teammates-photo/team-ph-4_sm@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/teammates-photo/team-ph-4_sm.jpeg 1x, ./images/teammates-photo/team-ph-4_sm@2x.jpeg 2x" type="image/jpeg" />
+                 <img
+                src="./images/teammates-photo/team-ph-4_sm.jpg"
                 alt="Фото учасника команды. Михаил Ермаков"
                 width="450"
               />
