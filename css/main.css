@@ -707,7 +707,7 @@ address {
 .modal {
   z-index: 10000;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   padding: 40px;
   width: calc(100% - 20px);
