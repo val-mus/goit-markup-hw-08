@@ -1416,9 +1416,14 @@ address {
 }
 
 .card-desc {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   color: var(--prime-bg-color);
+}
+@media screen and (min-width: 480px) {
+  .card-desc {
+    font-size: 18px;
+  }
 }
 
 .card-block:hover .card-overlay,

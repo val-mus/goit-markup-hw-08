@@ -34,12 +34,14 @@
         <div class="mobile-menu" data-menu>
           <ul class="list mobile-menu__nav">
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link " href="./index.html"
-                >Студия</a
-              >
+              <a class="mobile-menu__nav-link link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link link mobile-menu__current-link" href="./portfolio.html">Портфолио</a>
+              <a
+                class="mobile-menu__nav-link link mobile-menu__current-link"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="mobile-menu__nav-item">
               <a class="mobile-menu__nav-link link" href="#mobile-menu__contacts">Контакты</a>
@@ -73,13 +75,15 @@
         <nav class="header__navigation">
           <ul class="list header__nav-links flex-centered">
             <li>
+              <a href="./index.html" class="header__navigation-link link">Студия</a>
+            </li>
+            <li>
               <a
-                href="./index.html"
-                class="header__navigation-link link"
-                >Студия</a
+                href="./portfolio.html"
+                class="header__navigation-link link header__navigation-link--current"
+                >Портфолио</a
               >
             </li>
-            <li><a href="./portfolio.html" class="header__navigation-link link header__navigation-link--current">Портфолио</a></li>
             <li><a href="#adress" class="header__navigation-link link">Контакты</a></li>
           </ul>
         </nav>
@@ -118,15 +122,58 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(1).jpg    1x,
-                      ./images/portfolio-img/img(1)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(1).jpg"
-                    alt="Изображение пример Веб-сайт"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-1_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-1_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-1_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-1_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-1_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-1_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-1_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-1_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-1_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-1_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-1_sm.jpg"
+                      alt="Изображение пример Веб-сайт"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
+
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -144,15 +191,57 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(2).jpg    1x,
-                      ./images/portfolio-img/img(2)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(2).jpg"
-                    alt="Изображение пример Дизайн"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-2_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-2_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-2_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-2_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-2_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-2_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-2_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-2_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-2_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-2_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-2_sm.jpg"
+                      alt="Изображение пример Дизайн"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -172,15 +261,57 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(3).jpg    1x,
-                      ./images/portfolio-img/img(3)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(3).jpg"
-                    alt="Изображение пример Приложение"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-3_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-3_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-3_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-3_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-3_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-3_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-3_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-3_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-3_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-3_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-3_sm.jpg"
+                      alt="Изображение пример Приложение"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -198,15 +329,57 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(4).jpg    1x,
-                      ./images/portfolio-img/img(4)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(4).jpg"
-                    alt="Изображение пример Маркетинг"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-4_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-4_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-4_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-4_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-4_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-4_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-4_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-4_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-4_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-4_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-4_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-4_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-4_sm.jpg"
+                      alt="Изображение пример Маркетинг"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -224,15 +397,58 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(5).jpg    1x,
-                      ./images/portfolio-img/img(5)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(5).jpg"
-                    alt="Изображение пример Приложение"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-5_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-5_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-5_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-5_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-5_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-5_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-5_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-5_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-5_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-5_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-5_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-5_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-5_sm.jpg"
+                      alt="Изображение пример Приложение"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
+
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -250,15 +466,58 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(6).jpg    1x,
-                      ./images/portfolio-img/img(6)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(6).jpg"
-                    alt="Изображение пример Веб-сайт"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-6_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-6_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-6_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-6_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-6_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-6_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-6_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-6_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-6_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-6_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-6_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-6_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-6_sm.jpg"
+                      alt="Изображение пример Веб-сайт"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
+
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -276,15 +535,58 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(7).jpg    1x,
-                      ./images/portfolio-img/img(7)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(7).jpg"
-                    alt="Изображение пример Дизайн"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-7_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-7_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-7_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-7_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-7_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-7_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-7_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-7_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-7_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-7_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-7_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-7_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-7_sm.jpg"
+                      alt="Изображение пример Дизайн"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
+
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -302,15 +604,57 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(8).jpg    1x,
-                      ./images/portfolio-img/img(8)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(8).jpg"
-                    alt="Изображение пример Маркетинг"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-8_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-8_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-8_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-8_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-8_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-8_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-8_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-8_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-8_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-8_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-8_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-8_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-8_sm.jpg"
+                      alt="Изображение пример Маркетинг"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -328,15 +672,57 @@
             <li class="complete-card">
               <a href="" class="card-block" rel="noreferrer noopener">
                 <div class="card-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio-img/img(9).jpg    1x,
-                      ./images/portfolio-img/img(9)@2x.jpg 2x
-                    "
-                    src="./images/portfolio-img/img(9).jpg"
-                    alt="Изображение пример Приложение"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-9_lg.webp    1x,
+                        ./images/portfolio-img/prtf-img-9_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/prtf-img-9_lg.jpeg 1x,
+                    ./images/portfolio-img/prtf-img-9_lg@2x.jpeg 2x"" type="image/jpeg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-9_md.webp    1x,
+                        ./images/portfolio-img/prtf-img-9_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-9_md.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-9_md@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-9_sm.webp    1x,
+                        ./images/portfolio-img/prtf-img-9_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio-img/prtf-img-9_sm.jpeg    1x,
+                        ./images/portfolio-img/prtf-img-9_sm@2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio-img/prtf-img-9_sm.jpg"
+                      alt="Изображение пример Приложение"
+                      width="450"
+                      height="254"
+                    />
+                  </picture>
                   <div class="card-overlay">
                     <p class="card-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
